@@ -49,6 +49,7 @@
                 }
                 else
                 {
+                    this.sum -= sum;
                     prtmsg.Invoke("You take money your balance", this.sum);
                 }
             }
