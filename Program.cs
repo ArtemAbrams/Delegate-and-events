@@ -1,3 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-Console.WriteLine("Hello, World!");
+﻿
+Print print;
+print = Hello;
+print();
+void Hello() => Console.WriteLine("Hi");
+delegate void Print();
