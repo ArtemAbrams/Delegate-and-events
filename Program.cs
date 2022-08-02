@@ -1,6 +1,6 @@
 ﻿using ConsoleApp;
 
-Sum sum = delegate(int x, int y)
+/*Sum sum = delegate(int x, int y)
 {
     return x + y;
 };
@@ -15,4 +15,9 @@ void Print(string message, int debt, Printt print)
 }
 
 delegate void Printt(string message, int debt);
-delegate int Sum(int x, int y);
+delegate int Sum(int x, int y);*/
+int[] arr = new int[10];
+    Lumbda lumbda = new Lumbda(arr ,(int x) => x > 500);
+lumbda.PrintArray();
+int result = lumbda.Sum();
+Console.WriteLine(result);
