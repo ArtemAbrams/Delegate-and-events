@@ -27,22 +27,22 @@ public class Events
         }
     }
 
-    void Add(int sum)
+    public void Add(int sum)
     {
         this.sum += sum;
-        print.Invoke($"You add money your balance: {sum}");
+        print.Invoke($"You add money your balance: {this.sum}");
     }
 
-    void Take(int sum)
+    public void Take(int sum)
     {
         if (this.sum < sum)
         {
-            print.Invoke($"You don`t have enough money your balance: {sum}");
+            print.Invoke($"You don`t have enough money your balance: {this.sum}");
         }
         else
         {
             this.sum -= sum;
-            print.Invoke($"You take money your balance: {sum}");
+            print.Invoke($"You take money your balance: {this.sum}");
         }
     }
 }

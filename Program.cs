@@ -17,7 +17,10 @@ void Print(string message, int debt, Printt print)
 delegate void Printt(string message, int debt);
 delegate int Sum(int x, int y);*/
 /*int[] arr = new int[10];
-    Lumbda lumbda = new Lumbda(arr ,(int x) => x > 500);
+    Lumbda lumbda = new Lumbda(arr ,(int x) =>
+    {
+        return x > 500;
+    });
 lumbda.PrintArray();
 int result = lumbda.Sum();
 Console.WriteLine(result);*/
@@ -35,3 +38,8 @@ void PrintGreen(string message)
     Console.WriteLine(message);
     Console.ResetColor();
 }
+events.AddEvent(PrintGreen);
+events.Add(1000);
+events.RemoveEvent(PrintGreen);
+events.AddEvent(PrintRed);
+events.Take(300);
