@@ -2,7 +2,30 @@
 
 class Lumbda
 {
-  public int[] arr;
+  public int j = 0;
+
+  public int[] arr
+  {
+    get
+    {
+      return arr;
+    }
+    set
+    {
+      arr = value;
+    }
+  }
+  public Lumbda lumbda
+  {
+    get
+    {
+      return lumbda;
+    }
+    set
+    {
+      lumbda = value;
+    }
+  }
   public Checked check;
 
   public Lumbda(int[] arr, Checked check)

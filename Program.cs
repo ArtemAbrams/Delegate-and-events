@@ -16,14 +16,14 @@ void Print(string message, int debt, Printt print)
 
 delegate void Printt(string message, int debt);
 delegate int Sum(int x, int y);*/
-/*int[] arr = new int[10];
+int[] arr = new int[10];
     Lumbda lumbda = new Lumbda(arr ,(int x) =>
     {
         return x > 500;
     });
 lumbda.PrintArray();
 int result = lumbda.Sum();
-Console.WriteLine(result);*/
+Console.WriteLine(result);
 Events events = new Events(200);
 void PrintRed(string message)
 {
