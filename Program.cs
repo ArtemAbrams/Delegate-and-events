@@ -1,5 +1,6 @@
 ﻿using ConsoleApp;
-Clock clock  = new Clock(56);
-int hour = 67;
-Clock clock_1 = hour;
-int hour_1 = (int)clock;
+Celcius celcius = new Celcius(39);
+Fahrenheit fahrenheit = new Fahrenheit(134);
+Celcius celcius_1 = fahrenheit;
+Fahrenheit fahrenheit_1 = celcius;
+Console.WriteLine(" " + celcius_1.Gradus+ " " + fahrenheit_1.Gradus);
