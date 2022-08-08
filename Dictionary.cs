@@ -51,6 +51,10 @@ class Dictionary
                 case "green":
                     words[2].Target = value;
                     break;
+                default:
+                    throw new Exception("Wrong"); 
+            }
+            
         }
     }
 }

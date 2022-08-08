@@ -1,5 +1,5 @@
 ﻿using ConsoleApp;
-try
+/*try
 {
     string name;
    FootballTeam footballTeam = new FootballTeam(new Footballer[11]);
@@ -17,4 +17,6 @@ try
 catch (Exception ex)
 {
     Console.WriteLine("Wrong " + ex.Message);
-}
+}*/
+Dictionary dictionary = new Dictionary();
+Console.WriteLine(dictionary["red"]);
