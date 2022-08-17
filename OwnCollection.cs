@@ -92,4 +92,28 @@ public class OwnCollection<T>: IEnumerable,  IEnumerator
         }
         this.array = array;
     }
+
+    public void DeleteItem(T item)
+    {
+        int count = 0;
+        foreach (var i in this.array)
+        {
+            if (i.Equals(item))
+            {
+                count++;
+            }
+        }
+        T[] array = new T[this.array.Length-count];
+        int index = 0;
+        for (int i = 0; i < this.array.Length; i++)
+        {
+            if (!item.Equals(this.array[i]))
+            {
+                array[index] = this.array[i];
+                index++;
+            }
+        }
+
+        this.array = array;
+    }
 }

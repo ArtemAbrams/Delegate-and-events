@@ -22,21 +22,15 @@ catch (Exception ex)
     Console.WriteLine("Wrong " + ex.Message);
 }*/
 int[] array = new int [15]{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
-OwnCollection<int> ownCollection = new OwnCollection<int>(54,443,324,2343,532523,123123,425523,2343);
+OwnCollection<int> ownCollection = new OwnCollection<int>(54,443,324,2343,532523,123123,425523,2343,54,54,53,54);
 ownCollection.Append(12);
 foreach (int j in ownCollection)
 {
     Console.Write(j + " ");
 }
-OwnCollection<int> ownCollection_1 = new OwnCollection<int>();
-//ownCollection_1.NewCopy(ref ownCollection);
+ownCollection.DeleteItem(54);
 Console.WriteLine();
-ownCollection_1.Append(56546);
-ownCollection_1.NewCopy(ref ownCollection);
-ownCollection_1[0] = 56;
-ownCollection_1.Pop();
-foreach (int j in ownCollection_1)
+foreach (int j in ownCollection)
 {
     Console.Write(j + " ");
 }
-Console.WriteLine(ownCollection.SearchItem(100));
