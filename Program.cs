@@ -22,9 +22,18 @@ catch (Exception ex)
     Console.WriteLine("Wrong " + ex.Message);
 }*/
 int[] array = new int [15]{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
-OwnCollection<int> ownCollection = new OwnCollection<int>(1,2,3,4,5,6,7,8,9,0,10,3,2,1,344,231);
+OwnCollection<int> ownCollection = new OwnCollection<int>(54,443,324,2343,532523,123123,425523,2343);
 ownCollection.Append(12);
 foreach (int j in ownCollection)
+{
+    Console.Write(j + " ");
+}
+OwnCollection<int> ownCollection_1 = new OwnCollection<int>();
+//ownCollection_1.NewCopy(ref ownCollection);
+Console.WriteLine();
+ownCollection_1.Append(56546);
+ownCollection_1.NewCopy(ref ownCollection);
+foreach (int j in ownCollection_1)
 {
     Console.Write(j + " ");
 }
