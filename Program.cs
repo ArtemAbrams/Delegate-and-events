@@ -33,7 +33,10 @@ OwnCollection<int> ownCollection_1 = new OwnCollection<int>();
 Console.WriteLine();
 ownCollection_1.Append(56546);
 ownCollection_1.NewCopy(ref ownCollection);
+ownCollection_1[0] = 56;
+ownCollection_1.Pop();
 foreach (int j in ownCollection_1)
 {
     Console.Write(j + " ");
 }
+Console.WriteLine(ownCollection.SearchItem(100));

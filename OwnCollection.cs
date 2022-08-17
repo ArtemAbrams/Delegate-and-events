@@ -70,4 +70,26 @@ public class OwnCollection<T>: IEnumerable,  IEnumerator
 
         }
     }
+
+    public bool SearchItem(T item)
+    {
+        foreach (T i in array)
+        {
+            if (i.Equals(item))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+    public void Pop()
+    {
+        int n = this.array.Length - 1;
+        T[] array = new T[n];
+        for (int i = 0; i < n; i++)
+        {
+            array[i] = this.array[i];
+        }
+        this.array = array;
+    }
 }
